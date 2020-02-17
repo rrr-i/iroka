@@ -1,6 +1,10 @@
-@import './var.sass'
+$textColor: #555555
+$blue: #6c9bd2
+
 *
   font-size: 62.5%
+  box-sizing: border-box
+  font-family: sans-serif
 p
   color: white
 section
@@ -92,7 +96,7 @@ h2
 .seventh
   > div
     width: 100%
-    height: 1000px
+    height: 100%
     background: url('../materials/image/back3.png') no-repeat center center
     background-size: cover
     padding: 100px 0 50px
@@ -101,7 +105,7 @@ h2
       flex-wrap: wrap
       justify-content: space-between
       width: 60%
-      height: 500px
+      height: 100%
       margin: 0 auto
       p
         width: 33%
@@ -169,12 +173,13 @@ h2
   background: $blue
   color: white
   text-align: center
-  padding: 15px 0
+  padding: 5px 0
   border-radius: 40px
   margin: 0 auto
   text-decoration: none
-  div
-    font-size: 3rem
+  cursor: pointer
+  p
+    font-size: 2rem
 .tel
   margin-top: 20rem
   text-align: center
@@ -199,7 +204,24 @@ footer
     transform: translate(-50%,0%)
     color: white
     letter-spacing: 0.25em
-
+.contact-form
+  display: none
+  width: 80vw
+  height: 80vh
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  z-index: 100
+  background: white
+.bg
+  background: rgba(0,0,0,.6)
+  width: 100vw
+  height: 100vh
+  position: fixed
+  top: 0
+  z-index: 100
+  display: none
 @media screen and (max-width: 769px)
   h2
     font-size: 3rem
@@ -256,10 +278,11 @@ footer
           width: 22%
   .seventh
     > div
-      height: 550px
+      height: 100%
       padding: 50px 0
       div
         width: 90%
+        height: 100%
         p
           img
           &:last-child
@@ -304,6 +327,130 @@ footer
   .tel
     margin-top: 10rem
     font-size: 3rem
+  footer
+    height: 100px
+    img
+      width: 100px
+    small
+      position: absolute
+      bottom: 1rem
+      left: 50%
+      transform: translate(-50%,0%)
+      color: white
+      letter-spacing: 0.25em
+@media screen and (max-width: 450px)
+  section
+    margin-bottom: 5rem
+  h2
+    font-size: 2rem
+  .first
+    img
+      width: 40%
+      transform: translate(-50%,-100%)
+    p
+      top: 52%
+      width: 70%
+      font-size: 1.2rem
+  .second
+    height: 500px
+    .text
+      width: 80%
+      h2
+        color: white
+      p
+        font-size: 1.2rem
+        line-height: 3rem
+        letter-spacing: .05em
+    .icon
+      margin-top: 50px
+      &:last-child
+        width: 30%
+        top: 70%
+        left: 50%
+        transform: translate(-50%,-50%)
+        > p
+          width: 100px
+  .third
+    div
+      img
+        width: 90%
+  .fourth
+    width: 100%
+    height: 80px
+    max-height: 80px
+    p
+      top: 30%
+      transform: translate(-50%,-50%)
+      width: 100%
+      padding: 0 20px
+      text-align: center
+      font-size: 1.4rem
+      letter-spacing: .1em
+  .fifth
+    img
+      width: 90%
+  .sixth
+    div
+      div
+        width: 90%
+        p
+          width: 22%
+  .seventh
+    > div
+      height: 100%
+      padding: 50px 0
+      div
+        width: 90%
+        height: 100%
+        p
+          width: 48%
+          img
+          &:last-child
+            margin-top: 5rem
+  .eighth
+    > p
+      width: 40%
+      position: absolute
+      top: 55%
+      left: 50%
+      transform: translate(-50%,0%)
+      color: $textColor
+      font-size: 1.8rem
+      line-height: 1.75em
+      letter-spacing: .05em
+    >div
+      div
+        width: 90%
+        p
+          width: 50%
+          img
+  .ninth
+    >div
+      div
+        width: 90%
+        p
+          width: 23%
+          img
+            width: 100%
+        &:last-child
+          width: 90%
+          flex-direction: column
+          p
+            width: 80%
+          p:first-child::after,
+          p:nth-child(2)::after
+            font-size: 6rem
+            bottom: -180px
+            left: -23px
+            right: unset
+            transform: translate(0, 0) rotate(90deg)
+  .contact
+    width: 80%
+    p
+      font-size: 1rem
+  .tel
+    margin-top: 3rem
+    font-size: 1.2rem
   footer
     height: 100px
     img
