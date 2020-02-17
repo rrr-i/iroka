@@ -18,6 +18,8 @@ h2
 .first
   width: 100vw
   height: 100vh
+  background: url('../materials/image/PC.png') no-repeat center center
+  background-size: cover
   img
     width: 20%
     position: absolute
@@ -223,6 +225,7 @@ footer
     border: none
     border-bottom: 1px solid gray
     font-size: 1.2rem
+    border-radius: none
   textarea
     width: 100%
     font-size: 1.2rem
@@ -367,6 +370,8 @@ footer
   h2
     font-size: 2rem
   .first
+    background: url('../materials/image/PC.png') no-repeat center left
+    background-size: cover
     img
       width: 40%
       transform: translate(-50%,-100%)
@@ -388,12 +393,15 @@ footer
     .icon
       margin-top: 50px
       &:last-child
-        width: 30%
-        top: 70%
+        width: 70%
+        top: unset
+        bottom: 0
         left: 50%
         transform: translate(-50%,-50%)
         > p
           width: 100px
+          &:first-child
+            width: 81px
   .third
     div
       img
@@ -427,7 +435,7 @@ footer
         width: 90%
         height: 100%
         p
-          width: 48%
+          width: 49%
           img
           &:last-child
             margin-top: 5rem
@@ -465,8 +473,8 @@ footer
           p:first-child::after,
           p:nth-child(2)::after
             font-size: 6rem
-            bottom: -180px
-            left: -23px
+            bottom: -220px
+            left: -43px
             right: unset
             transform: translate(0, 0) rotate(90deg)
   .contact
@@ -477,6 +485,11 @@ footer
     margin-top: 3rem
     font-size: 1.2rem
     letter-spacing: .1em
+  .contact-form
+    h3
+      font-size: 2rem
+    button
+      font-size: 1.5rem
   footer
     height: 100px
     img

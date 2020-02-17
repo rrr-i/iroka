@@ -27,6 +27,8 @@ h2 {
 .first {
   width: 100vw;
   height: 100vh;
+  background: url("../materials/image/PC.png") no-repeat center center;
+  background-size: cover;
 }
 
 .first img {
@@ -341,6 +343,7 @@ footer small {
   border: none;
   border-bottom: 1px solid gray;
   font-size: 1.2rem;
+  border-radius: none;
 }
 
 .contact-form textarea {
@@ -521,6 +524,10 @@ footer small {
   h2 {
     font-size: 2rem;
   }
+  .first {
+    background: url("../materials/image/PC.png") no-repeat center left;
+    background-size: cover;
+  }
   .first img {
     width: 40%;
     -webkit-transform: translate(-50%, -100%);
@@ -551,14 +558,18 @@ footer small {
     margin-top: 50px;
   }
   .second .icon:last-child {
-    width: 30%;
-    top: 70%;
+    width: 70%;
+    top: unset;
+    bottom: 0;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
   .second .icon:last-child > p {
     width: 100px;
+  }
+  .second .icon:last-child > p:first-child {
+    width: 81px;
   }
   .third div img {
     width: 90%;
@@ -596,7 +607,7 @@ footer small {
     height: 100%;
   }
   .seventh > div div p {
-    width: 48%;
+    width: 49%;
   }
   .seventh > div div p:last-child {
     margin-top: 5rem;
@@ -642,8 +653,8 @@ footer small {
   .ninth > div div:last-child p:first-child::after,
   .ninth > div div:last-child p:nth-child(2)::after {
     font-size: 6rem;
-    bottom: -180px;
-    left: -23px;
+    bottom: -220px;
+    left: -43px;
     right: unset;
     -webkit-transform: translate(0, 0) rotate(90deg);
             transform: translate(0, 0) rotate(90deg);
@@ -658,6 +669,12 @@ footer small {
     margin-top: 3rem;
     font-size: 1.2rem;
     letter-spacing: .1em;
+  }
+  .contact-form h3 {
+    font-size: 2rem;
+  }
+  .contact-form button {
+    font-size: 1.5rem;
   }
   footer {
     height: 100px;
