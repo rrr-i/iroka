@@ -98,6 +98,12 @@ h2 {
   width: 100%;
 }
 
+.second .text p {
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  line-height: 2em;
+}
+
 .third div {
   text-align: center;
 }
@@ -154,12 +160,24 @@ h2 {
   width: 100%;
 }
 
+.sixth div ol.usage {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.sixth div ol.usage li {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #555555;
+  letter-spacing: .2rem;
+}
+
 .seventh > div {
   width: 100%;
   height: 100%;
   background: url("../materials/image/back3.png") no-repeat center center;
   background-size: cover;
-  padding: 100px 0 50px;
+  padding: 100px 0;
 }
 
 .seventh > div div {
@@ -324,8 +342,10 @@ footer small {
 .contact-form {
   display: none;
   width: 80vw;
+  max-width: 700px;
   height: 80vh;
-  padding: 20px;
+  min-height: 550px;
+  padding: 50px;
   background: white;
   position: fixed;
   top: 50%;
@@ -336,13 +356,18 @@ footer small {
   text-align: center;
 }
 
+.contact-form h3 {
+  font-size: 2.5rem;
+}
+
 .contact-form input {
   width: 100%;
   margin-top: 2rem;
+  padding: 1rem;
   outline: none;
   border: none;
   border-bottom: 1px solid gray;
-  font-size: 1.2rem;
+  font-size: 2rem;
   border-radius: 0px;
 }
 
@@ -352,13 +377,15 @@ footer small {
   border: 1px solid gray;
   margin-top: 3rem;
   padding: 1rem;
+  font-size: 2rem;
 }
 
 .contact-form button {
   width: 60%;
   background: #6c9bd2;
+  font-size: 2rem;
   margin-top: 2rem;
-  padding: 5px 0;
+  padding: 2rem 0;
   border-radius: 40px;
   text-align: center;
   color: white;
@@ -383,6 +410,20 @@ footer small {
   top: 0;
   z-index: 100;
   display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .second {
+    height: 500px;
+  }
+  .second div:last-child {
+    top: 75%;
+  }
+  .second .text p {
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    line-height: 2em;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -546,7 +587,7 @@ footer small {
             transform: translate(-50%, -50%);
   }
   .first p {
-    top: 45%;
+    top: 42%;
     width: 70%;
     font-size: 1.2rem;
   }
@@ -609,6 +650,16 @@ footer small {
   }
   .sixth div div p {
     width: 22%;
+  }
+  .sixth div ol.usage {
+    width: 90%;
+    margin: 1rem auto 0;
+  }
+  .sixth div ol.usage li {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    color: #555555;
+    letter-spacing: .2rem;
   }
   .seventh > div {
     height: 100%;
@@ -682,8 +733,19 @@ footer small {
     font-size: 1.2rem;
     letter-spacing: .1em;
   }
+  .contact-form {
+    padding: 20px;
+    min-height: unset;
+  }
   .contact-form h3 {
     font-size: 2rem;
+  }
+  .contact-form input {
+    padding: .5rem;
+    font-size: 1.3rem;
+  }
+  .contact-form textarea {
+    font-size: 1.3rem;
   }
   .contact-form button {
     padding: 10px 0;
@@ -696,13 +758,7 @@ footer small {
     width: 100px;
   }
   footer small {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
-    color: white;
-    letter-spacing: 0.25em;
+    font-size: .8rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

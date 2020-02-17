@@ -61,6 +61,11 @@ h2
         width: 100px
         img
           width: 100%
+  .text
+    p
+      font-size: 1.6rem
+      letter-spacing: .1rem
+      line-height: 2em
 .third
   div
     text-align: center
@@ -95,13 +100,21 @@ h2
         width: 23%
         img
           width: 100%
+    ol.usage
+      width: 60%
+      margin: 0 auto
+      li
+        margin-top: 2rem
+        font-size: 2rem
+        color: $textColor
+        letter-spacing: .2rem
 .seventh
   > div
     width: 100%
     height: 100%
     background: url('../materials/image/back3.png') no-repeat center center
     background-size: cover
-    padding: 100px 0 50px
+    padding: 100px 0
     div
       display: flex
       flex-wrap: wrap
@@ -209,8 +222,10 @@ footer
 .contact-form
   display: none
   width: 80vw
+  max-width: 700px
   height: 80vh
-  padding: 20px
+  min-height: 550px
+  padding: 50px
   background: white
   position: fixed
   top: 50%
@@ -218,13 +233,16 @@ footer
   transform: translate(-50%,-50%)
   z-index: 100
   text-align: center
+  h3
+    font-size: 2.5rem
   input
     width: 100%
     margin-top: 2rem
+    padding: 1rem
     outline: none
     border: none
     border-bottom: 1px solid gray
-    font-size: 1.2rem
+    font-size: 2rem
     border-radius: 0px
   textarea
     width: 100%
@@ -232,11 +250,13 @@ footer
     border: 1px solid gray
     margin-top: 3rem 
     padding: 1rem
+    font-size: 2rem
   button
     width: 60%
     background: $blue
+    font-size: 2rem
     margin-top: 2rem 
-    padding: 5px 0
+    padding: 2rem 0
     border-radius: 40px
     text-align: center
     color: white
@@ -255,6 +275,17 @@ footer
   top: 0
   z-index: 100
   display: none
+@media screen and (max-width: 1024px)
+  .second
+    height: 500px
+    div
+      &:last-child
+        top: 75%
+    .text
+      p
+        font-size: 1.6rem
+        letter-spacing: .1rem
+        line-height: 2em
 @media screen and (max-width: 769px)
   h2
     font-size: 3rem
@@ -384,7 +415,7 @@ footer
       top: 35%
       transform: translate(-50%,-50%)
     p
-      top: 45%
+      top: 42%
       width: 70%
       font-size: 1.2rem
   .second
@@ -435,6 +466,14 @@ footer
         width: 90%
         p
           width: 22%
+      ol.usage
+        width: 90%
+        margin: 1rem auto 0
+        li
+          margin-top: 2rem
+          font-size: 1.3rem
+          color: $textColor
+          letter-spacing: .2rem
   .seventh
     > div
       height: 100%
@@ -494,8 +533,15 @@ footer
     font-size: 1.2rem
     letter-spacing: .1em
   .contact-form
+    padding: 20px
+    min-height: unset
     h3
       font-size: 2rem
+    input
+      padding: .5rem
+      font-size: 1.3rem
+    textarea
+      font-size: 1.3rem
     button
       padding: 10px 0
       font-size: 1.5rem
@@ -504,9 +550,4 @@ footer
     img
       width: 100px
     small
-      position: absolute
-      bottom: 1rem
-      left: 50%
-      transform: translate(-50%,0%)
-      color: white
-      letter-spacing: 0.25em
+      font-size: .8rem
