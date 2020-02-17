@@ -323,13 +323,42 @@ footer small {
   display: none;
   width: 80vw;
   height: 80vh;
+  padding: 20px;
+  background: white;
   position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 100;
-  background: white;
+  text-align: center;
+}
+
+.contact-form input {
+  width: 100%;
+  margin-top: 2rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 1.2rem;
+}
+
+.contact-form textarea {
+  width: 100%;
+  font-size: 1.2rem;
+  border: 1px solid gray;
+  margin-top: 3rem;
+}
+
+.contact-form button {
+  width: 60%;
+  background: #6c9bd2;
+  margin-top: 2rem;
+  padding: 5px 0;
+  border-radius: 40px;
+  text-align: center;
+  color: white;
+  border: none;
 }
 
 .bg {
@@ -507,6 +536,8 @@ footer small {
   }
   .second .text {
     width: 80%;
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
   }
   .second .text h2 {
     color: white;
@@ -587,6 +618,7 @@ footer small {
   }
   .eighth > div div p {
     width: 50%;
+    margin-bottom: 0;
   }
   .ninth > div div {
     width: 90%;
@@ -620,11 +652,12 @@ footer small {
     width: 80%;
   }
   .contact p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .tel {
     margin-top: 3rem;
     font-size: 1.2rem;
+    letter-spacing: .1em;
   }
   footer {
     height: 100px;
