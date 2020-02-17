@@ -1,0 +1,459 @@
+@charset "UTF-8";
+* {
+  font-size: 62.5%;
+}
+
+p {
+  color: white;
+}
+
+section {
+  position: relative;
+  margin-bottom: 15rem;
+}
+
+section:first-child {
+  margin-bottom: 0rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.first {
+  width: 100vw;
+  height: 100vh;
+}
+
+.first img {
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
+}
+
+.first p {
+  width: 40%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  color: #555555;
+  font-size: 1.8rem;
+  line-height: 1.75em;
+  letter-spacing: .05em;
+}
+
+.second {
+  width: 100vw;
+  height: 780px;
+  background: url("../materials/image/back1.png") no-repeat center center;
+  background-size: cover;
+}
+
+.second h2 {
+  color: white;
+}
+
+.second div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  z-index: 2;
+}
+
+.second div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.second div:last-child > p {
+  width: 100px;
+}
+
+.second div:last-child > p img {
+  width: 100%;
+}
+
+.third div {
+  text-align: center;
+}
+
+.third div img {
+  width: 40%;
+}
+
+.fourth {
+  width: 100%;
+  min-height: 80px;
+  height: 200px;
+  max-height: 200px;
+  background: url("../materials/image/back2.png") no-repeat center center;
+  background-size: cover;
+}
+
+.fourth p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  font-size: 1.8rem;
+}
+
+.fifth {
+  text-align: center;
+}
+
+.fifth img {
+  width: 60%;
+}
+
+.sixth div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.sixth div div p {
+  width: 23%;
+}
+
+.sixth div div p img {
+  width: 100%;
+}
+
+.seventh > div {
+  width: 100%;
+  height: 1000px;
+  background: url("../materials/image/back3.png") no-repeat center center;
+  background-size: cover;
+  padding: 100px 0 50px;
+}
+
+.seventh > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.seventh > div div p {
+  width: 33%;
+  height: auto;
+}
+
+.seventh > div div p img {
+  width: 100%;
+}
+
+.seventh > div div p:last-child {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.eighth > p {
+  width: 40%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  color: #555555;
+  font-size: 1.8rem;
+  line-height: 1.75em;
+  letter-spacing: .05em;
+}
+
+.eighth > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.eighth > div div p {
+  width: 30%;
+  height: auto;
+  margin-bottom: 6rem;
+}
+
+.eighth > div div p img {
+  width: 100%;
+}
+
+.ninth > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.ninth > div div p {
+  position: relative;
+  width: 23%;
+  height: auto;
+  margin-bottom: 6rem;
+}
+
+.ninth > div div p img {
+  width: 100%;
+}
+
+.ninth > div div:last-child {
+  width: 50%;
+}
+
+.ninth > div div:last-child p:first-child::after,
+.ninth > div div:last-child p:nth-child(2)::after {
+  content: "〉";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -20rem;
+  color: #6c9bd2;
+  font-size: 15rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.contact {
+  display: block;
+  width: 300px;
+  background: #6c9bd2;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 40px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.contact div {
+  font-size: 3rem;
+}
+
+.tel {
+  margin-top: 20rem;
+  text-align: center;
+  color: #6c9bd2;
+  font-size: 4rem;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 175px;
+  background: url("../materials/image/back4.png") no-repeat top center;
+  background-size: cover;
+}
+
+footer img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 150px;
+}
+
+footer small {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  color: white;
+  letter-spacing: 0.25em;
+}
+
+@media screen and (max-width: 769px) {
+  h2 {
+    font-size: 3rem;
+  }
+  .first img {
+    width: 40%;
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+  }
+  .first p {
+    top: 52%;
+    width: 70%;
+    font-size: 1.6rem;
+  }
+  .second {
+    height: 500px;
+  }
+  .second .text {
+    width: 80%;
+  }
+  .second .text h2 {
+    color: white;
+  }
+  .second .text p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    letter-spacing: .05em;
+  }
+  .second .icon {
+    margin-top: 50px;
+  }
+  .second .icon:last-child {
+    width: 30%;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .second .icon:last-child > p {
+    width: 100px;
+  }
+  .third div img {
+    width: 90%;
+  }
+  .fourth {
+    width: 100%;
+    height: 130px;
+    max-height: 130px;
+  }
+  .fourth p {
+    top: 30%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: .1em;
+  }
+  .fifth img {
+    width: 90%;
+  }
+  .sixth div div {
+    width: 90%;
+  }
+  .sixth div div p {
+    width: 22%;
+  }
+  .seventh > div {
+    height: 550px;
+    padding: 50px 0;
+  }
+  .seventh > div div {
+    width: 90%;
+  }
+  .seventh > div div p:last-child {
+    margin-top: 5rem;
+  }
+  .eighth > p {
+    width: 40%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    color: #555555;
+    font-size: 1.8rem;
+    line-height: 1.75em;
+    letter-spacing: .05em;
+  }
+  .eighth > div div {
+    width: 90%;
+  }
+  .eighth > div div p {
+    width: 32%;
+  }
+  .ninth > div div {
+    width: 90%;
+  }
+  .ninth > div div p {
+    width: 23%;
+  }
+  .ninth > div div p img {
+    width: 100%;
+  }
+  .ninth > div div:last-child {
+    width: 90%;
+  }
+  .ninth > div div:last-child p {
+    width: 30%;
+  }
+  .ninth > div div:last-child p:first-child::after,
+  .ninth > div div:last-child p:nth-child(2)::after {
+    right: -6rem;
+    font-size: 6rem;
+  }
+  .contact {
+    width: 80%;
+  }
+  .contact div {
+    font-size: 3rem;
+  }
+  .tel {
+    margin-top: 10rem;
+    font-size: 3rem;
+  }
+  footer {
+    height: 100px;
+  }
+  footer img {
+    width: 100px;
+  }
+  footer small {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    color: white;
+    letter-spacing: 0.25em;
+  }
+}
+/*# sourceMappingURL=index.css.map */

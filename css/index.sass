@@ -1,0 +1,317 @@
+@import './var.sass'
+*
+  font-size: 62.5%
+p
+  color: white
+section
+  position: relative
+  margin-bottom: 15rem
+  &:first-child
+    margin-bottom: 0rem
+h2
+  text-align: center
+  font-size: 4rem
+.first
+  width: 100vw
+  height: 100vh
+  img
+    width: 20%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-70%)
+  p
+    width: 40%
+    position: absolute
+    top: 55%
+    left: 50%
+    transform: translate(-50%,0%)
+    color: $textColor
+    font-size: 1.8rem
+    line-height: 1.75em
+    letter-spacing: .05em
+.second
+  width: 100vw
+  height: 780px
+  background: url('../materials/image/back1.png') no-repeat center center
+  background-size: cover
+  h2
+    color: white
+  div
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-60%)
+    z-index: 2
+    &:last-child
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 30%
+      top: 70%
+      left: 50%
+      transform: translate(-50%,-50%)
+      > p
+        width: 100px
+        img
+          width: 100%
+.third
+  div
+    text-align: center
+    img
+      width: 40%
+.fourth
+  width: 100%
+  min-height: 80px
+  height: 200px
+  max-height: 200px
+  background: url('../materials/image/back2.png') no-repeat center center
+  background-size: cover
+  p
+    position: absolute
+    top: 40%
+    left: 50%
+    transform: translate(-50%,0%)
+    font-size: 1.8rem
+.fifth
+  text-align: center
+  img
+    width: 60%
+.sixth
+  div
+    div
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 60%
+      margin: 0 auto
+      p
+        width: 23%
+        img
+          width: 100%
+.seventh
+  > div
+    width: 100%
+    height: 1000px
+    background: url('../materials/image/back3.png') no-repeat center center
+    background-size: cover
+    padding: 100px 0 50px
+    div
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      width: 60%
+      height: 500px
+      margin: 0 auto
+      p
+        width: 33%
+        height: auto
+        img
+          width: 100%
+        &:last-child
+          width: 100%
+          margin-top: 3rem
+.eighth
+  > p
+    width: 40%
+    position: absolute
+    top: 55%
+    left: 50%
+    transform: translate(-50%,0%)
+    color: $textColor
+    font-size: 1.8rem
+    line-height: 1.75em
+    letter-spacing: .05em
+  >div
+    div
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      width: 60%
+      margin: 0 auto
+      p
+        width: 30%
+        height: auto
+        margin-bottom: 6rem
+        img
+          width: 100%
+.ninth
+  >div
+    div
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      width: 60%
+      margin: 0 auto
+      p
+        position: relative
+        width: 23%
+        height: auto
+        margin-bottom: 6rem
+        img
+          width: 100%
+      &:last-child
+        width: 50%
+        p:first-child::after,
+        p:nth-child(2)::after
+          content: "〉"
+          display: block
+          position: absolute
+          top: 50%
+          right: -20rem
+          color: $blue
+          font-size: 15rem
+          transform: translate(0,-50%)
+.contact
+  display: block
+  width: 300px
+  background: $blue
+  color: white
+  text-align: center
+  padding: 15px 0
+  border-radius: 40px
+  margin: 0 auto
+  text-decoration: none
+  div
+    font-size: 3rem
+.tel
+  margin-top: 20rem
+  text-align: center
+  color: $blue
+  font-size: 4rem
+footer
+  position: relative
+  width: 100%
+  height: 175px
+  background: url('../materials/image/back4.png') no-repeat top center
+  background-size: cover
+  img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: 150px
+  small
+    position: absolute
+    bottom: 1rem
+    left: 50%
+    transform: translate(-50%,0%)
+    color: white
+    letter-spacing: 0.25em
+
+@media screen and (max-width: 769px)
+  h2
+    font-size: 3rem
+  .first
+    img
+      width: 40%
+      transform: translate(-50%,-100%)
+    p
+      top: 52%
+      width: 70%
+      font-size: 1.6rem
+  .second
+    height: 500px
+    .text
+      width: 80%
+      h2
+        color: white
+      p
+        font-size: 1.6rem
+        line-height: 3rem
+        letter-spacing: .05em
+    .icon
+      margin-top: 50px
+      &:last-child
+        width: 30%
+        top: 70%
+        left: 50%
+        transform: translate(-50%,-50%)
+        > p
+          width: 100px
+  .third
+    div
+      img
+        width: 90%
+  .fourth
+    width: 100%
+    height: 130px
+    max-height: 130px
+    p
+      top: 30%
+      transform: translate(-50%,-50%)
+      width: 100%
+      text-align: center
+      font-size: 1.8rem
+      letter-spacing: .1em
+  .fifth
+    img
+      width: 90%
+  .sixth
+    div
+      div
+        width: 90%
+        p
+          width: 22%
+  .seventh
+    > div
+      height: 550px
+      padding: 50px 0
+      div
+        width: 90%
+        p
+          img
+          &:last-child
+            margin-top: 5rem
+  .eighth
+    > p
+      width: 40%
+      position: absolute
+      top: 55%
+      left: 50%
+      transform: translate(-50%,0%)
+      color: $textColor
+      font-size: 1.8rem
+      line-height: 1.75em
+      letter-spacing: .05em
+    >div
+      div
+        width: 90%
+        p
+          width: 32%
+          img
+  .ninth
+    >div
+      div
+        width: 90%
+        p
+          width: 23%
+          img
+            width: 100%
+        &:last-child
+          width: 90%
+          p
+            width: 30%
+          p:first-child::after,
+          p:nth-child(2)::after
+            right: -6rem
+            font-size: 6rem
+  .contact
+    width: 80%
+    div
+      font-size: 3rem
+  .tel
+    margin-top: 10rem
+    font-size: 3rem
+  footer
+    height: 100px
+    img
+      width: 100px
+    small
+      position: absolute
+      bottom: 1rem
+      left: 50%
+      transform: translate(-50%,0%)
+      color: white
+      letter-spacing: 0.25em
