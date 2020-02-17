@@ -343,7 +343,7 @@ footer small {
   border: none;
   border-bottom: 1px solid gray;
   font-size: 1.2rem;
-  border-radius: none;
+  border-radius: 0px;
 }
 
 .contact-form textarea {
@@ -351,6 +351,7 @@ footer small {
   font-size: 1.2rem;
   border: 1px solid gray;
   margin-top: 3rem;
+  padding: 1rem;
 }
 
 .contact-form button {
@@ -362,6 +363,16 @@ footer small {
   text-align: center;
   color: white;
   border: none;
+}
+
+.contact-form .closeBtn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
+.contact-form .closeBtn img {
+  width: 24px;
 }
 
 .bg {
@@ -530,16 +541,17 @@ footer small {
   }
   .first img {
     width: 40%;
-    -webkit-transform: translate(-50%, -100%);
-            transform: translate(-50%, -100%);
+    top: 35%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   .first p {
-    top: 52%;
+    top: 45%;
     width: 70%;
     font-size: 1.2rem;
   }
   .second {
-    height: 500px;
+    height: 600px;
   }
   .second .text {
     width: 80%;
@@ -551,7 +563,7 @@ footer small {
   }
   .second .text p {
     font-size: 1.2rem;
-    line-height: 3rem;
+    line-height: 2.3rem;
     letter-spacing: .05em;
   }
   .second .icon {
@@ -674,6 +686,7 @@ footer small {
     font-size: 2rem;
   }
   .contact-form button {
+    padding: 10px 0;
     font-size: 1.5rem;
   }
   footer {

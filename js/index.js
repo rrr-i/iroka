@@ -9,5 +9,11 @@ $(function(){
       });
       $('.contact-form').fadeOut();
     });
+    $('.closeBtn').on('click',function(){
+      $('.bg').fadeOut().queue(function(){
+        $(this).remove();
+      })
+      $('.contact-form').fadeOut();
+    });
   });
 });
